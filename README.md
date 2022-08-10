@@ -1,6 +1,6 @@
 # Dagger2andRetrofitDemo 
-It is one more very simple test Android application using Dagger2, Glide, Viewmodel and Retrofit. 
-Was made just for testing purpose to to better understand how these frameworks work.
+It is one more very simple test Android application using Dagger 2, Glide, Viewmodel and Retrofit. 
+Was made just for testing purpose to better understand how these frameworks work.
 
 
 
