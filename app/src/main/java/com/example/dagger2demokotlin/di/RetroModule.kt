@@ -11,7 +11,6 @@ class RetroModule {
 
     private val baseUrl = "https://api.github.com/search/"
 
-
     @Singleton
     @Provides
     fun getRetroServiceInterface(retrofit: Retrofit): RetrofitServiceInterface {
