@@ -1,5 +1,5 @@
 # Dagger2andRetrofitDemo 
-It is one more very simple test Android application using Dagger 2, Glide, Viewmodel, Retrofit and gitHub API Search. 
+It is one more very simple test Android application using Dagger 2, Glide, Viewmodel, Retrofit and make gitHub API Search. 
 Was made just for testing purpose to better understand how these frameworks work.
 
 
