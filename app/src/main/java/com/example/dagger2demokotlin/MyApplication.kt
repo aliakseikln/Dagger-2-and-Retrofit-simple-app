@@ -2,8 +2,9 @@ package com.example.dagger2demokotlin
 
 import android.app.Application
 import com.example.dagger2demokotlin.di.DaggerRetrofitComponent
-import com.example.dagger2demokotlin.di.RetroModule
+import com.example.dagger2demokotlin.di.RetrofitModule
 import com.example.dagger2demokotlin.di.RetrofitComponent
+
 
 class MyApplication : Application() {
 
@@ -13,7 +14,7 @@ class MyApplication : Application() {
         super.onCreate()
 
         retrofitComponent = DaggerRetrofitComponent.builder()
-            .retroModule(RetroModule())
+            .retroModule(RetrofitModule())
             .build()
     }
 

@@ -5,7 +5,7 @@ import dagger.Component
 import javax.inject.Singleton
 
 @Singleton
-@Component(modules = [RetroModule::class])
+@Component(modules = [RetrofitModule::class])
 interface RetrofitComponent {
 
     fun inject(mainActivityViewModel: MainActivityViewModel)

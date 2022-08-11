@@ -8,9 +8,10 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.dagger2demokotlin.databinding.ActivityMainBinding
 
+
 class MainActivity : AppCompatActivity() {
-    private lateinit var recyclerViewAdapter: RecyclerViewAdapter
-    private lateinit var mainActivityViewModel: MainActivityViewModel
+    private lateinit var rvAdapter: RecyclerViewAdapter
+    private lateinit var vm: MainActivityViewModel
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,27 +25,25 @@ class MainActivity : AppCompatActivity() {
 
     private fun initRecyclerView() {
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerViewAdapter = RecyclerViewAdapter()
-        binding.recyclerView.adapter = recyclerViewAdapter
+        rvAdapter = RecyclerViewAdapter()
+        binding.recyclerView.adapter = rvAdapter
     }
 
     @SuppressLint("NotifyDataSetChanged")
     private fun initViewModel() {
-        mainActivityViewModel = ViewModelProvider(this)[MainActivityViewModel::class.java]
-        mainActivityViewModel.getLiveDataObserver().observe(
-            this
-        ) { t ->
+        vm = ViewModelProvider(this)[MainActivityViewModel::class.java]
+        vm.getLiveDataObserver().observe(this) { t ->
             if (t != null) {
-                recyclerViewAdapter.setUpdatedData(t.items)
-                recyclerViewAdapter.notifyDataSetChanged()
+                rvAdapter.setUpdatedData(t.items)
+                rvAdapter.notifyDataSetChanged()
             } else {
                 Toast.makeText(
                     this@MainActivity,
-                    "error in getting the data",
+                    "Error in getting the data",
                     Toast.LENGTH_SHORT
                 ).show()
             }
         }
-        mainActivityViewModel.makeApiCall()
+        vm.makeApiCall()
     }
 }

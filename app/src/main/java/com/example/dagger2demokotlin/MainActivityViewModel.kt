@@ -14,7 +14,6 @@ class MainActivityViewModel(application: Application) : AndroidViewModel(applica
 
     @Inject
     lateinit var mService: RetrofitServiceInterface
-
     private var liveDataList: MutableLiveData<RecyclerList>
 
     init {

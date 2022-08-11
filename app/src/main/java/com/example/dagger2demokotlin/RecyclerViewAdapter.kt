@@ -10,6 +10,7 @@ import com.bumptech.glide.request.RequestOptions
 import com.example.dagger2demokotlin.databinding.RecyclerViewListRowBinding
 import com.example.dagger2demokotlin.model.RecyclerData
 
+
 class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>() {
 
     private var listData: List<RecyclerData>? = null
