@@ -4,7 +4,7 @@ Was made just for testing purpose to better understand how these frameworks work
 
 
 
-<img src="https://user-images.githubusercontent.com/48939805/183996278-01dcffbc-3193-4956-9bca-4fbdbebd61a2.png" width=35% height=35%>
+<img src="https://user-images.githubusercontent.com/48939805/184575765-f7aefae0-09a1-45d0-a670-defc9269170c.png" width=35% height=35%>
 
 
 # Libraries and technologies used.
