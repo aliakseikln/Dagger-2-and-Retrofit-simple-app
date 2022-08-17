@@ -1,4 +1,4 @@
-# Dagger2andRetrofitDemo 
+# Dagger 2 and Retrofit simple app
 It is one more very simple test Android application using gitHub API Search. 
 Was made just for testing purpose to better understand how these frameworks work.
 
