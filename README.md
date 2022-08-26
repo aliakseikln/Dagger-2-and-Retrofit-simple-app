@@ -1,4 +1,4 @@
-#GitHub Search
+# GitHub Search
 It is one more very simple test Android application using gitHub API Search. 
 Was made just for testing purpose to better understand how these frameworks work.
 
